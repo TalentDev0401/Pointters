@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatBubbleView" customModule="Pointters" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="knC-Yf-MlX"/>
+                <outlet property="ivBgBubble" destination="4qK-1B-gLp" id="lW7-aT-P2X"/>
+                <outlet property="lblText" destination="EGW-Wd-6Py" id="o7Y-R8-60h"/>
+                <outlet property="leadingSpacingConstraint" destination="5us-3B-eSh" id="wFo-95-xFp"/>
+                <outlet property="trailingSpacingConstraint" destination="tY4-Gg-gYq" id="dTG-nH-NhR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_chat_msg" translatesAutoresizingMaskIntoConstraints="NO" id="4qK-1B-gLp">
+                    <rect key="frame" x="0.0" y="0.0" width="263" height="39"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGW-Wd-6Py">
+                    <rect key="frame" x="10" y="6" width="228" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4qK-1B-gLp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2Sz-Te-lxF"/>
+                <constraint firstItem="EGW-Wd-6Py" firstAttribute="leading" secondItem="4qK-1B-gLp" secondAttribute="leading" constant="10" id="5us-3B-eSh"/>
+                <constraint firstItem="4qK-1B-gLp" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="9gg-at-bsi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="4qK-1B-gLp" secondAttribute="bottom" id="C4Y-WL-0ow"/>
+                <constraint firstItem="EGW-Wd-6Py" firstAttribute="bottom" secondItem="4qK-1B-gLp" secondAttribute="bottom" constant="-6" id="aIq-uG-IQe"/>
+                <constraint firstItem="EGW-Wd-6Py" firstAttribute="top" secondItem="4qK-1B-gLp" secondAttribute="top" constant="6" id="fOx-SJ-ABc"/>
+                <constraint firstItem="4qK-1B-gLp" firstAttribute="trailing" secondItem="EGW-Wd-6Py" secondAttribute="trailing" constant="25" id="tY4-Gg-gYq"/>
+                <constraint firstItem="4qK-1B-gLp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wn5-8L-2yY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="102.5" y="-208.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_chat_msg" width="137" height="27"/>
+    </resources>
+</document>
